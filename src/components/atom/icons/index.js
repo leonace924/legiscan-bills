@@ -1,3 +1,21 @@
+export function IconBackArrow() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width="5"
+      height="9"
+      viewBox="0 0 5 9"
+    >
+      <path
+        d="M4.5,5,9,0H0Z"
+        transform="translate(5) rotate(90)"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export function IconArrowLeft() {
   return (
     <svg
