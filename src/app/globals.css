@@ -26,3 +26,40 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Pagination Style */
+.legiscan-pagination {
+  @apply pt-12 text-center lg:pt-20;
+}
+
+.legiscan-pagination .pagination {
+  @apply inline-flex items-center justify-normal gap-2.5 lg:gap-4;
+}
+
+.legiscan-pagination .pagination li {
+  @apply flex items-center;
+}
+.legiscan-pagination .pagination li.active a {
+  @apply text-sky-400;
+}
+
+.legiscan-pagination .pagination li a {
+  @apply p-1 text-base font-medium no-underline transition-all duration-300 text-sky-800 hover:text-sky-400;
+}
+
+.legiscan-pagination .pagination li.previous {
+  @apply pr-2;
+}
+.legiscan-pagination .pagination li.next {
+  @apply pl-2;
+}
+
+.legiscan-pagination .pagination li.previous a,
+.legiscan-pagination .pagination li.next a {
+  @apply flex items-center w-4 h-5;
+}
+
+.legiscan-pagination .pagination li.previous.disabled a,
+.legiscan-pagination .pagination li.next.disabled a {
+  @apply opacity-50 pointer-events-none;
+}
