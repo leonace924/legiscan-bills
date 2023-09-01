@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { PuffLoader } from "react-spinners";
 import { useForm } from "react-hook-form";
 import ReactPaginate from "react-paginate";
-import { Button, TextInput } from "@/components/atom";
 import BillCard from "./bill-card";
-import { IconArrowLeft, IconArrowRight } from "../atom/icons";
+import { Button, TextInput } from "@/components/atom";
+import { IconArrowLeft, IconArrowRight } from "@/components/atom/icons";
 
 const API_KEY = process.env.NEXT_PUBLIC_LEGISCAN_API_KEY;
 const STATE = process.env.NEXT_PUBLIC_LEGISCAN_STATE || "GA"; // Georgia State Code

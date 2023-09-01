@@ -2,7 +2,7 @@ import Bills from "@/components/bills-list";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center min-h-screen p-8 lg:p-20">
+    <>
       <div className="flex flex-col mb-6 lg:mb-8">
         <h1 className="text-4xl font-bold text-center text-gray-700">
           Legiscan Bills (Georgia)
@@ -13,6 +13,6 @@ export default function Home() {
       </div>
 
       <Bills />
-    </main>
+    </>
   );
 }
